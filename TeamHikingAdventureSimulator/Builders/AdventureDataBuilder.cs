@@ -6,7 +6,7 @@ using YamlDotNet.Serialization.NamingConventions;
 
 namespace TeamHikingAdventureSimulator.Builders
 {
-    class AdventureDataBuilder
+    public class AdventureDataBuilder
     {
 
         private AdventureData _adventureData;

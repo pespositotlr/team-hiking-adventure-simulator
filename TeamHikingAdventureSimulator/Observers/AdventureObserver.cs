@@ -7,7 +7,7 @@ using TeamHikingAdventureSimulator.Observers.Interfaces;
 
 namespace TeamHikingAdventureSimulator.Observers
 {
-    class AdventureObserver : IAdventureObserver
+    public class AdventureObserver : IAdventureObserver
     {
         public Adventure _subject;
         public TimeSpan _loggedTime;
@@ -121,6 +121,9 @@ namespace TeamHikingAdventureSimulator.Observers
 
         private void LogAdventureFinished()
         {
+            if (!_subject.IsFinished)
+                throw new InvalidOperationException("Tried to log adventure finished but it's not finished.");
+
             if (!_subject.BridgesCrossed.Any() || !_subject.TripsMade.Any())
                 throw new InvalidOperationException("Tried to log adventure finished when you haven't gone anywhere.");
 

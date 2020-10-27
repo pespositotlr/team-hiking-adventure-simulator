@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TeamHikingAdventureSimulator.Observers.Interfaces
 {
-    interface IAdventureObserver
+    public interface IAdventureObserver
     {
         public void NotifyStartingAdventure();
 

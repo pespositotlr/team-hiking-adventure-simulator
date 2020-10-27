@@ -6,10 +6,10 @@ using TeamHikingAdventureSimulator.Observers.Interfaces;
 
 namespace TeamHikingAdventureSimulator.Entities.Interfaces
 {
-    interface IAdventure
+    public interface IAdventure
     {
-        void Attach(IAdventureObserver observer);
+        public void Attach(IAdventureObserver observer);
 
-        void Start();
+        public void Start();
     }
 }

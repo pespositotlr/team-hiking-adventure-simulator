@@ -5,7 +5,7 @@ using YamlDotNet.RepresentationModel;
 
 namespace TeamHikingAdventureSimulator.Entities
 {
-    class Trip
+    public class Trip
     {
         public Trip(List<Hiker> hikers, TimeSpan tripLength, double speed, int location)
         {

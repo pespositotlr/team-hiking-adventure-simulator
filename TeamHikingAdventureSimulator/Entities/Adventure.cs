@@ -9,7 +9,7 @@ using TeamHikingAdventureSimulator.Observers.Interfaces;
 
 namespace TeamHikingAdventureSimulator.Entities
 {
-    class Adventure : IAdventure
+    public class Adventure : IAdventure
     {
         public List<Bridge> Bridges { get; set; }
         public List<Hiker> Hikers { get; set; }
@@ -17,6 +17,7 @@ namespace TeamHikingAdventureSimulator.Entities
         public int CurrentLocation { get; set; }
         public List<Bridge> BridgesCrossed { get; set; }
         public List<Trip> TripsMade { get; set; }
+        public bool IsFinished { get; set; }
 
         private List<IAdventureObserver> _observers;
 
@@ -28,6 +29,7 @@ namespace TeamHikingAdventureSimulator.Entities
             CurrentLocation = 0;
             BridgesCrossed = new List<Bridge>();
             TripsMade = new List<Trip>();
+            IsFinished = false;
             _observers = new List<IAdventureObserver>();
         }
 
@@ -38,6 +40,9 @@ namespace TeamHikingAdventureSimulator.Entities
 
         public void Start()
         {
+            CheckForBridgeExceptions();
+            CheckForHikerExceptions();
+
             foreach (var observer in _observers)
                 observer.NotifyStartingAdventure();
 
@@ -52,9 +57,32 @@ namespace TeamHikingAdventureSimulator.Entities
                 Traverse(bridge);
             }
 
+            this.IsFinished = true;
+
             foreach (var observer in _observers)
                 observer.NotifyAdventureFinished();
         }
+
+        private void CheckForBridgeExceptions()
+        {
+            if (Bridges == null)
+                throw new ArgumentNullException("No bridges found.");
+
+            if (Bridges.GroupBy(x => x.Location).Any(g => g.Count() > 1))
+                throw new ArgumentException("Multiple bridges in the same location.");
+        }
+        private void CheckForHikerExceptions()
+        {
+            if (Hikers == null)
+                throw new ArgumentNullException("No hikers found.");
+
+            if (!Hikers.Any(x => x.StartingLocation == 0))
+                throw new ArgumentException("No hikers at the start location.");
+
+            if (Hikers.Any(x => x.Speed <= 0))
+                throw new ArgumentException("Hiker found with non-positive speed.");
+        }
+
         private void Traverse(Bridge bridge)
         {
             CurrentLocation = bridge.Location;

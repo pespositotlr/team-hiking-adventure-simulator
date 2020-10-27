@@ -12,10 +12,9 @@ namespace TeamHikingAdventureSimulator.Entities
     /// <summary>
     /// For storing deserialized data from yaml files
     /// </summary>
-    class AdventureData
+    public class AdventureData
     {
         public List<Bridge> Bridges { get; set; }
         public List<Hiker> Hikers { get; set; }
-
     }
 }

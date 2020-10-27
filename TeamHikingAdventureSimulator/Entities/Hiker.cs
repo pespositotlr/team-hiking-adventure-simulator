@@ -5,7 +5,7 @@ using YamlDotNet.RepresentationModel;
 
 namespace TeamHikingAdventureSimulator.Entities
 {
-    class Hiker
+    public class Hiker
     {
         public string Name { get; set; }
         public int StartingLocation { get; set; }
