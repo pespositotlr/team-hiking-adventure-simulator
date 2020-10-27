@@ -1,0 +1,14 @@
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\bin\Debug\netcoreapp3.1\TeamHikingAdventureSimulator.exe
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\obj\Debug\netcoreapp3.1\TeamHikingAdventureSimulator.csprojAssemblyReference.cache
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\obj\Debug\netcoreapp3.1\TeamHikingAdventureSimulator.AssemblyInfoInputs.cache
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\obj\Debug\netcoreapp3.1\TeamHikingAdventureSimulator.AssemblyInfo.cs
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\bin\Debug\netcoreapp3.1\TeamHikingAdventureSimulator.deps.json
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\bin\Debug\netcoreapp3.1\TeamHikingAdventureSimulator.runtimeconfig.json
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\bin\Debug\netcoreapp3.1\TeamHikingAdventureSimulator.runtimeconfig.dev.json
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\bin\Debug\netcoreapp3.1\TeamHikingAdventureSimulator.dll
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\bin\Debug\netcoreapp3.1\TeamHikingAdventureSimulator.pdb
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\bin\Debug\netcoreapp3.1\YamlDotNet.dll
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\obj\Debug\netcoreapp3.1\TeamHikingAdventureSimulator.csproj.CopyComplete
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\obj\Debug\netcoreapp3.1\TeamHikingAdventureSimulator.dll
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\obj\Debug\netcoreapp3.1\TeamHikingAdventureSimulator.pdb
+C:\Users\kewl0\source\repos\TeamHikingAdventureSimulator\TeamHikingAdventureSimulator\bin\Debug\netcoreapp3.1\Data\Input.yaml

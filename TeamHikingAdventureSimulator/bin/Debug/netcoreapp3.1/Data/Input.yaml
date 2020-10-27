@@ -1,0 +1,39 @@
+﻿hikers:
+- 
+    name: Hiker A
+    startingLocation: 0
+    speed: 100
+- 
+    name: Hiker B
+    startingLocation: 0
+    speed: 50
+- 
+    name: Hiker C
+    startingLocation: 0
+    speed: 20
+-
+    name: Hiker D
+    startingLocation: 0
+    speed: 10
+- 
+    name: Hiker E
+    startingLocation: 1
+    speed: 2.5
+- 
+    name: Hiker F
+    startingLocation: 2
+    speed: 25
+- 
+    name: Hiker G
+    startingLocation: 2
+    speed: 15
+bridges:
+- 
+    location: 1
+    length: 100
+- 
+    location: 2
+    length: 250
+- 
+    location: 3
+    length: 150
