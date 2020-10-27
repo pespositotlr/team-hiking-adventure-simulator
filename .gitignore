@@ -1,0 +1,5 @@
+# Compiled source #
+###################
+/.vs/*
+/TeamHikingAdventureSimulator/bin*
+/TeamHikingAdventureSimulator/obj/Debug*
